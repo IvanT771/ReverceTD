@@ -22,20 +22,17 @@ public class MoveControl : MonoBehaviour
     public float maxMoveZ = 80;
     public float minMoveZ = -10;
 
-    private bool doMove = true;
+    private bool isPause = true;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            doMove = !doMove;
-            GameMaster.instatiate.SetPause(true);
+            isPause = !isPause;
+            GameMaster.instatiate.SetPause(!isPause);
         }
 
-        if (!doMove)
-        {
-            return;
-        }
+      
 
         if (Input.GetKey(KeyCode.W) || Input.mousePosition.y >= Screen.height - board)
         {
