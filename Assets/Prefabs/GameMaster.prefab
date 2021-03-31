@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6510601864748545738}
+  - component: {fileID: 1279195526}
+  - component: {fileID: 731473557855630141}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -30,3 +32,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279195526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6072930421195820172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee3a51b416fc3949922de18632c1477, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelPause: {fileID: 0}
+--- !u!114 &731473557855630141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6072930421195820172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db75ccafc542f3b4fa50b468907c6a02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myMoney: 1000
+  archer: {fileID: 0}
+  archerPrice: 30
+  big: {fileID: 0}
+  bigPrice: 20
+  bomj: {fileID: 0}
+  bomjPrice: 10
+  textMyMoney: {fileID: 0}
