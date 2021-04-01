@@ -9,7 +9,7 @@ public class Node : MonoBehaviour
     private Color startColor;
     private Renderer rend;
 
-    private GameObject tower = null;
+    private GameObject mob = null;
 
     private void Start()
     {
@@ -27,11 +27,15 @@ public class Node : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (tower != null)
+        if (mob != null)
         {
             Debug.Log("Can't build on this place!");
             return;
         }
+        mob = BuildManager.instatiate.GetMob();
+        if (mob == null) { return;}
+
+        Instantiate(mob,transform.position,transform.rotation);
 
         rend.enabled = false;
 

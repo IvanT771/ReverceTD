@@ -14,4 +14,9 @@ public class PanelTools : MonoBehaviour
 
         animator.SetBool("hide",isShow);
     }
+
+    public void SelectedMob(string name)
+    {
+        BuildManager.instatiate.SelectedMob(name);
+    }
 }
