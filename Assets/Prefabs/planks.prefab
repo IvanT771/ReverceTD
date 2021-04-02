@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2258060042461245727}
   m_Layer: 0
   m_Name: planks 3
-  m_TagString: Untagged
+  m_TagString: Planks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 581142704294456215}
   m_Layer: 0
   m_Name: Cube.002_cell.027
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 741747122908222604}
   m_Layer: 0
   m_Name: Cube.002_cell.009
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 793533798796234667}
   m_Layer: 0
   m_Name: Cube.002_cell.005
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 836590970115250830}
   m_Layer: 0
   m_Name: Cube.002_cell.022
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 992599927379633286}
   m_Layer: 0
   m_Name: Cube.002_cell.021
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 1006270094138481745}
   m_Layer: 0
   m_Name: Cube.002_cell.004
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 1126007410782311841}
   m_Layer: 0
   m_Name: Cube.002_cell.015
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 1451510162347305460}
   m_Layer: 0
   m_Name: Cube.002_cell.010
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 1464766642054645801}
   m_Layer: 0
   m_Name: Cube.002_cell.032
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,7 +1104,7 @@ GameObject:
   - component: {fileID: 1691784023150259426}
   m_Layer: 0
   m_Name: Cube.002_cell.013
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1283,7 +1283,7 @@ GameObject:
   - component: {fileID: 1835775625095107073}
   m_Layer: 0
   m_Name: Cube.002_cell.033
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1395,7 +1395,7 @@ GameObject:
   - component: {fileID: 2174429672100472216}
   m_Layer: 0
   m_Name: Cube.002_cell.023
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 2304988174550893263}
   m_Layer: 0
   m_Name: Cube.002_cell.030
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1619,7 +1619,7 @@ GameObject:
   - component: {fileID: 2750239466350370454}
   m_Layer: 0
   m_Name: Cube.002_cell.020
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1731,7 +1731,7 @@ GameObject:
   - component: {fileID: 2913164174022178356}
   m_Layer: 0
   m_Name: Cube.002_cell.016
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1843,7 +1843,7 @@ GameObject:
   - component: {fileID: 2943279290499769716}
   m_Layer: 0
   m_Name: Cube.002_cell.007
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1955,7 +1955,7 @@ GameObject:
   - component: {fileID: 3519024646122479436}
   m_Layer: 0
   m_Name: Cube.002_cell.012
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2067,7 +2067,7 @@ GameObject:
   - component: {fileID: 4084670735890998560}
   m_Layer: 0
   m_Name: Cube.002_cell.019
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2179,7 +2179,7 @@ GameObject:
   - component: {fileID: 4393963103801034380}
   m_Layer: 0
   m_Name: Cube.002_cell
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2291,7 +2291,7 @@ GameObject:
   - component: {fileID: 4452810695511967733}
   m_Layer: 0
   m_Name: Cube.002_cell.024
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2403,7 +2403,7 @@ GameObject:
   - component: {fileID: 4872942329514786015}
   m_Layer: 0
   m_Name: Cube.002_cell.001
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2515,7 +2515,7 @@ GameObject:
   - component: {fileID: 5061328828320922961}
   m_Layer: 0
   m_Name: Cube.002_cell.029
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2627,7 +2627,7 @@ GameObject:
   - component: {fileID: 5613714370480095947}
   m_Layer: 0
   m_Name: Cube.002_cell.011
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2739,7 +2739,7 @@ GameObject:
   - component: {fileID: 5759646879424998491}
   m_Layer: 0
   m_Name: Cube.002_cell.025
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2851,7 +2851,7 @@ GameObject:
   - component: {fileID: 5806965756722031293}
   m_Layer: 0
   m_Name: Cube.002_cell.035
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2963,7 +2963,7 @@ GameObject:
   - component: {fileID: 5826471665616126501}
   m_Layer: 0
   m_Name: Cube.002_cell.014
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3075,7 +3075,7 @@ GameObject:
   - component: {fileID: 5826590894664645407}
   m_Layer: 0
   m_Name: Cube.002_cell.017
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3187,7 +3187,7 @@ GameObject:
   - component: {fileID: 6378775639255499991}
   m_Layer: 0
   m_Name: Cube.002_cell.003
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3299,7 +3299,7 @@ GameObject:
   - component: {fileID: 6674016057171309193}
   m_Layer: 0
   m_Name: Cube.002_cell.006
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3411,7 +3411,7 @@ GameObject:
   - component: {fileID: 7544442257275106924}
   m_Layer: 0
   m_Name: Cube.002_cell.028
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3523,7 +3523,7 @@ GameObject:
   - component: {fileID: 7889264700939736458}
   m_Layer: 0
   m_Name: Cube.002_cell.034
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3635,7 +3635,7 @@ GameObject:
   - component: {fileID: 7898151533051097264}
   m_Layer: 0
   m_Name: Cube.002_cell.018
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3747,7 +3747,7 @@ GameObject:
   - component: {fileID: 8208681066457187030}
   m_Layer: 0
   m_Name: Cube.002_cell.008
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3859,7 +3859,7 @@ GameObject:
   - component: {fileID: 8312925668295380230}
   m_Layer: 0
   m_Name: Cube.002_cell.031
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3971,7 +3971,7 @@ GameObject:
   - component: {fileID: 8409650533493486622}
   m_Layer: 0
   m_Name: Cube.002_cell.002
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4083,7 +4083,7 @@ GameObject:
   - component: {fileID: 9194476316118399060}
   m_Layer: 0
   m_Name: Cube.002_cell.026
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

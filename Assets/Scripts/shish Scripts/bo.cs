@@ -37,12 +37,7 @@ public class bo : MonoBehaviour
 
    public void OnTriggerEnter(Collider other) 
    {
-        var bush = other.GetComponent<find>();
-        if (bush!=null)
-        {
-            other.GetComponent<find>()
-bo.Damage();
-        }
+        
          
         //     if (other.tag == "Player")
         // {
@@ -65,12 +60,7 @@ bo.Damage();
      
           
     }
-  public void Damage(int damage)
- {
-
- hit -=10;
- 
- }
+  
    
 }
 
