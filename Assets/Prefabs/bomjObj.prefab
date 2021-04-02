@@ -706,7 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myHp: 100
   rangeAttack: 3
-  forceDamage: 1
+  forceDamage: 5
   enemyTag: Enemy
   animator: {fileID: 3765405617928427844}
   speed: 3
