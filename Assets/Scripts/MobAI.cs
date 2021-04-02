@@ -7,10 +7,15 @@ public class MobAI : MobsAI
     [Header("Контроль анимацией")]
     [SerializeField] private Animator animator;
     [SerializeField] private float speed = 3f;
+    [SerializeField] private float timeFre = 2f;
+
+
     
-    
-    private float timeFre = 2f;
     private float time = 2f;
+    private void Start()
+    {
+        time = timeFre;
+    }
     private void Attack()
     {
         if(target == null) { return;}
