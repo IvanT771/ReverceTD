@@ -2,49 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MobAI : MonoBehaviour
+public class MobAI : MobsAI
 {
-    [Header("Кого атакует?(кто цель?)")]
-    [SerializeField] private string enemyTag = "Enemy";
-
-    [Header("Характеристики")]
+    [Header("Контроль анимацией")]
+    [SerializeField] private Animator animator;
     [SerializeField] private float speed = 3f;
-    [SerializeField] private float rangeAttack = 3f;
-    [SerializeField] private int damageForce = 1;
-    [SerializeField] private short myHp = 100;
-
-    private Transform target = null;
-
-    private void SetTarget()
-    {
-        var enemy = GameObject.FindGameObjectsWithTag(enemyTag);
-
-        float dist = Mathf.Infinity;
-        foreach (var en in enemy)
-        {
-            float buf = Vector3.Distance(transform.position, en.transform.position);
-            if ( dist > buf)
-            {
-                if(en != null) { 
-                dist = buf;
-                target = en.transform; }
-            }
-        }
-    }
+    
+    
 
     private void Attack()
     {
+        if(target == null) { return;}
 
-    }
+        var buf = target.GetComponent<MobsAI>();
+        if(buf == null) { return;}
 
-    private void Start()
-    {
-         InvokeRepeating("SetTarget",0,0.5f);
+        buf.Damage(forceDamage);
     }
 
     private void Update()
     {
-        if(target == null) { return;}
+        if(target == null || !GameMaster.instatiate.isGo) { return;}
 
         Vector3 dir = target.position - transform.position;
 
@@ -54,6 +32,7 @@ public class MobAI : MonoBehaviour
         }
         else
         {
+            animator.SetBool("attack",false);
             transform.Translate(dir.normalized * speed*Time.deltaTime);
         }
     }

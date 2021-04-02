@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 public class GameMaster : MonoBehaviour
 {
     public static GameMaster instatiate; //Синголтон
+    public bool isGo = false;
 
+    [SerializeField] private GameObject panelStart;
     [Header("Связующие объекты")]
     [SerializeField] private GameObject panelPause = null;
 
@@ -33,5 +35,11 @@ public class GameMaster : MonoBehaviour
     public void LoadScene(int index)
     {
         SceneManager.LoadScene(index);
+    }
+    public void GameStarter()
+    {
+        panelStart.SetActive(false);
+        Time.timeScale = 1;
+        isGo = true;
     }
 }
