@@ -39,18 +39,23 @@ public class MobAI : MobsAI
 
     private void Update()
     {
-        if(target == null || !GameMaster.instatiate.isGo) {  return;}
-
+        if(target == null || !GameMaster.instatiate.isGo) { if(!GameMaster.instatiate.isGo){ animator.enabled = false;} return;}
+        animator.enabled = true;
         Vector3 dir = target.position - transform.position;
 
-        if(Vector3.Distance(transform.position,target.position) <= rangeAttack)
+        //look 
+        Quaternion look = Quaternion.LookRotation(dir);
+        Vector3 rot = look.eulerAngles;
+        transform.eulerAngles = new Vector3(0, rot.y, 0);
+
+        if (Vector3.Distance(transform.position,target.position) <= rangeAttack)
         {
             Attack();
         }
         else
         {
             animator.SetBool("attack",false);
-            transform.Translate(dir.normalized * speed*Time.deltaTime);
+            transform.Translate(dir.normalized * speed*Time.deltaTime,Space.World);
         }
     }
 

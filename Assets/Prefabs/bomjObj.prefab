@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myHp: 100
-  rangeAttack: 1
+  rangeAttack: 3
   forceDamage: 1
   enemyTag: Enemy
   animator: {fileID: 3765405617928427844}

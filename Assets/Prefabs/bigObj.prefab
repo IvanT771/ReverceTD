@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myHp: 1000
-  rangeAttack: 3
+  rangeAttack: 4
   forceDamage: 5
   enemyTag: Enemy
   animator: {fileID: 7370907745559322504}
