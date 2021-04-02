@@ -9,7 +9,8 @@ public class MobAI : MobsAI
     [SerializeField] private float speed = 3f;
     
     
-
+    private float timeFre = 2f;
+    private float time = 2f;
     private void Attack()
     {
         if(target == null) { return;}
@@ -17,7 +18,17 @@ public class MobAI : MobsAI
         var buf = target.GetComponent<MobsAI>();
         if(buf == null) { return;}
 
+        animator.SetBool("attack", true);
+
+        if(time >= timeFre) { 
+        time = 0;
         buf.Damage(forceDamage);
+        }
+        else
+        {
+            time+=Time.deltaTime;
+        }
+
     }
 
     private void Update()
