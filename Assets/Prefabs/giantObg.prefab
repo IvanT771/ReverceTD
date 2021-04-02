@@ -504,9 +504,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2458354827938637158}
+  - component: {fileID: 334777317619540917}
   m_Layer: 0
   m_Name: giantObg
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -526,6 +527,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334777317619540917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132112240467023311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdf3fc24aec3ba41acd739370934d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myHp: 100
+  rangeAttack: 3
+  forceDamage: 1
+  enemyTag: Enemy
+  animator: {fileID: 3713538624358747173}
+  speed: 3
+  timeFre: 2
 --- !u!1 &4768273584507040951
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 5736686163879598762}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 8, y: 8, z: 8}
   m_Children:
   - {fileID: 4064437458638114958}
   - {fileID: 8117381628830702453}
