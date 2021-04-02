@@ -15,6 +15,7 @@ public class MobAI : MobsAI
     private void Start()
     {
         time = timeFre;
+        InvokeRepeating("SetTarget", 0, 0.5f);
     }
     private void Attack()
     {
@@ -38,7 +39,7 @@ public class MobAI : MobsAI
 
     private void Update()
     {
-        if(target == null || !GameMaster.instatiate.isGo) { return;}
+        if(target == null || !GameMaster.instatiate.isGo) {  return;}
 
         Vector3 dir = target.position - transform.position;
 

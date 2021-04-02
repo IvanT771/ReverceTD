@@ -14,6 +14,7 @@ public class MobsAI : MonoBehaviour
 
     private void SetTarget()
     {
+        
         var enemy = GameObject.FindGameObjectsWithTag(enemyTag);
 
         float dist = Mathf.Infinity;
@@ -42,10 +43,7 @@ public class MobsAI : MonoBehaviour
 
 
 
-    private void Start()
-    {
-        InvokeRepeating("SetTarget", 0, 0.5f);
-    }
+    
 
 
 }

@@ -692,11 +692,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myHp: 100
-  rangeAttack: 2
+  rangeAttack: 1
   forceDamage: 1
   enemyTag: Enemy
   animator: {fileID: 3765405617928427844}
   speed: 3
+  timeFre: 2
 --- !u!1 &5887771640963263119
 GameObject:
   m_ObjectHideFlags: 0
