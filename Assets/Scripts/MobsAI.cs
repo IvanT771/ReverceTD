@@ -12,7 +12,12 @@ public class MobsAI : MonoBehaviour
 
     protected Transform target = null;
 
-    private void SetTarget()
+    public virtual void Attack()
+    {
+        //Base
+    }
+
+    protected void SetTarget()
     {
         
         var enemy = GameObject.FindGameObjectsWithTag(enemyTag);

@@ -17,24 +17,18 @@ public class MobAI : MobsAI
         time = timeFre;
         InvokeRepeating("SetTarget", 0, 0.5f);
     }
-    public void Attack()
+    public override void Attack()
     {
-        if(target == null) { return;}
+        
+        if (target == null) { return; }
 
         var buf = target.GetComponent<MobsAI>();
-        if(buf == null) { return;}
+        if (buf == null) { return; }
 
         animator.SetBool("attack", true);
 
-        if(time >= timeFre) { 
-        time = 0;
         buf.Damage(forceDamage);
-        }
-        else
-        {
-            time+=Time.deltaTime;
-        }
-
+        
     }
 
     private void Update()
