@@ -25,7 +25,7 @@ public class MobAI : MobsAI
         var buf = target.GetComponent<MobsAI>();
         if (buf == null) { return; }
 
-        animator.SetBool("attack", true);
+        
 
         buf.Damage(forceDamage);
         
@@ -44,7 +44,7 @@ public class MobAI : MobsAI
 
         if (Vector3.Distance(transform.position,target.position) <= rangeAttack)
         {
-            Attack();
+            animator.SetBool("attack", true);
         }
         else
         {
