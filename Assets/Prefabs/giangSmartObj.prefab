@@ -974,13 +974,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acdf3fc24aec3ba41acd739370934d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHp: 100
+  myHp: 1000
   rangeAttack: 3
-  forceDamage: 1
+  forceDamage: 5
   enemyTag: Enemy
   animator: {fileID: 5328248195039225552}
-  speed: 3
-  timeFre: 2
+  speed: 25
+  timeFre: 0.1
 --- !u!1 &7860940520030471632
 GameObject:
   m_ObjectHideFlags: 0

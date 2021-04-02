@@ -19,6 +19,15 @@ public class BuildManager : MonoBehaviour
     [SerializeField] private GameObject bomj = null;
     [SerializeField] private int bomjPrice = 10;
 
+    [SerializeField] private GameObject giant = null;
+    [SerializeField] private int giantPrice = 200;
+
+    [SerializeField] private GameObject giantS = null;
+    [SerializeField] private int giantSPrice = 200;
+
+    [SerializeField] private GameObject titan = null;
+    [SerializeField] private int titanPrice = 200;
+
     [SerializeField] private TextMeshProUGUI textMyMoney;
 
     private GameObject mob = null;
@@ -41,6 +50,9 @@ public class BuildManager : MonoBehaviour
             case "bomj": { mob = bomj; price = bomjPrice;  break;}
             case "big": { mob = big; price = bigPrice; break;}
             case "archer": { mob = bomj; price = archerPrice;  break;}
+            case "giant": { mob = giant; price = giantPrice; break; }
+            case "giantS": { mob = giantS; price = giantSPrice; break; }
+            case "titan": { mob = titan; price = titanPrice; break; }
             default:
                 break;
         }
