@@ -17,7 +17,7 @@ public class MobAI : MobsAI
         time = timeFre;
         InvokeRepeating("SetTarget", 0, 0.5f);
     }
-    private void Attack()
+    public void Attack()
     {
         if(target == null) { return;}
 

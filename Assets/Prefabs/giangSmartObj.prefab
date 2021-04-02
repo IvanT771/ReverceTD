@@ -976,11 +976,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myHp: 1000
   rangeAttack: 3
-  forceDamage: 5
+  forceDamage: 8
   enemyTag: Enemy
   animator: {fileID: 5328248195039225552}
-  speed: 25
-  timeFre: 0.1
+  speed: 3
+  timeFre: 3
 --- !u!1 &7860940520030471632
 GameObject:
   m_ObjectHideFlags: 0
