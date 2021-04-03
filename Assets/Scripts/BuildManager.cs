@@ -49,7 +49,7 @@ public class BuildManager : MonoBehaviour
         {
             case "bomj": { mob = bomj; price = bomjPrice;  break;}
             case "big": { mob = big; price = bigPrice; break;}
-            case "archer": { mob = bomj; price = archerPrice;  break;}
+            case "archer": { mob = archer; price = archerPrice;  break;}
             case "giant": { mob = giant; price = giantPrice; break; }
             case "giantS": { mob = giantS; price = giantSPrice; break; }
             case "titan": { mob = titan; price = titanPrice; break; }

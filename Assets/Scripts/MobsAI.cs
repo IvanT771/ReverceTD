@@ -21,6 +21,20 @@ public class MobsAI : MonoBehaviour
     {
         
         var enemy = GameObject.FindGameObjectsWithTag(enemyTag);
+        
+        if(enemy.Length <= 0) 
+        { 
+            if(enemyTag == "Enemy")
+            {
+            Debug.Log("---GAME WIN---");
+            }
+            else
+            {
+            Debug.Log("---GAME OWER---");
+            }
+
+            return;
+        }
 
         float dist = Mathf.Infinity;
         foreach (var en in enemy)
