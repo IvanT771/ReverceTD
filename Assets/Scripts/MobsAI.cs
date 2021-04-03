@@ -19,6 +19,7 @@ public class MobsAI : MonoBehaviour
 
     protected void SetTarget()
     {
+        if (!GameMaster.instatiate.isGo) { return; }
         
         var enemy = GameObject.FindGameObjectsWithTag(enemyTag);
         
@@ -32,7 +33,7 @@ public class MobsAI : MonoBehaviour
             {
             Debug.Log("---GAME OWER---");
             }
-
+            GameMaster.instatiate.isGo = false;
             return;
         }
 
