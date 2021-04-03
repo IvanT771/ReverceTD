@@ -33,6 +33,12 @@ public class BuildManager : MonoBehaviour
     private GameObject mob = null;
     private int price = 1000;
 
+    public void ChangeMoney(int addMoney)
+    {
+        myMoney+=addMoney;
+        textMyMoney.text = myMoney + "$";
+    }
+
     private void Awake()
     {
         if(instatiate != null) { Debug.LogError("BuildManaget is instatiate");}

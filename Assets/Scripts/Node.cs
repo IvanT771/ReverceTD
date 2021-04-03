@@ -10,11 +10,24 @@ public class Node : MonoBehaviour
     private Renderer rend;
 
     private GameObject mob = null;
+    private GameObject model = null;
 
     private void Start()
     {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            if(mob == null) { return;}
+            int price = mob.GetComponent<MobsAI>().GetPrice();
+            Destroy(model);
+            BuildManager.instatiate.ChangeMoney(price);
+            mob = null;
+        }
     }
 
     private void OnMouseEnter()
@@ -35,7 +48,7 @@ public class Node : MonoBehaviour
         mob = BuildManager.instatiate.GetMob();
         if (mob == null) { return;}
 
-        Instantiate(mob,transform.position,transform.rotation);
+        model = Instantiate(mob,transform.position,transform.rotation);
 
         rend.enabled = false;
 

@@ -708,6 +708,7 @@ MonoBehaviour:
   rangeAttack: 3.5
   forceDamage: 5
   enemyTag: Enemy
+  price: 10
   animator: {fileID: 3765405617928427844}
   speed: 3
   timeFre: 2

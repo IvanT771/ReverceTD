@@ -8,6 +8,7 @@ public class MobsAI : MonoBehaviour
     [SerializeField]protected float rangeAttack = 3f;
     [SerializeField]protected int forceDamage = 1;
     [SerializeField]protected string enemyTag = "Enemy";
+    [SerializeField]protected int price = 100; 
 
 
     protected Transform target = null;
@@ -15,6 +16,11 @@ public class MobsAI : MonoBehaviour
     public virtual void Attack()
     {
         //Base
+    }
+
+    public int GetPrice()
+    {
+        return price;
     }
 
     protected void SetTarget()
