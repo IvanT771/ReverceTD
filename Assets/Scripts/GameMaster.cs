@@ -9,6 +9,7 @@ public class GameMaster : MonoBehaviour
     [SerializeField] private GameObject panelStart;
     [Header("Связующие объекты")]
     [SerializeField] private GameObject panelPause = null;
+    [SerializeField] private PanelTools panelTools = null;
 
     private void Awake()
     {
@@ -41,5 +42,10 @@ public class GameMaster : MonoBehaviour
         panelStart.SetActive(false);
         Time.timeScale = 1;
         isGo = true;
+
+        if(panelTools != null)
+        {
+            panelTools.ShowHidePanel();
+        }
     }
 }

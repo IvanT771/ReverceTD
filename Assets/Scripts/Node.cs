@@ -20,6 +20,7 @@ public class Node : MonoBehaviour
 
     private void OnMouseOver()
     {
+        if (GameMaster.instatiate.isGo) { return; }
         if (Input.GetMouseButtonDown(1))
         {
             if(mob == null) { return;}
@@ -27,6 +28,7 @@ public class Node : MonoBehaviour
             Destroy(model);
             BuildManager.instatiate.ChangeMoney(price);
             mob = null;
+            rend.enabled = true;
         }
     }
 
@@ -40,6 +42,7 @@ public class Node : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        if (GameMaster.instatiate.isGo) { return;}
         if (mob != null)
         {
             Debug.Log("Can't build on this place!");
