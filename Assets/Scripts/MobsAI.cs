@@ -17,6 +17,7 @@ public class MobsAI : MonoBehaviour
     private void Start()
     {
         if (isTower) { return;}
+
         InvokeRepeating("SetTarget", 0, 0.5f);
     }
     public virtual void Attack()

@@ -35,14 +35,18 @@ public class Rocker : MobsAI
     }
     private void Update()
     {
+        if(target != null) { 
 
-        if(Vector3.Distance(transform.position,target.position) <= 3f)
+            
+
+        if( Vector3.Distance(transform.position,target.position) <= 10f)
         {
             animator.SetBool("attack",true);
         }
         else
         {
             animator.SetBool("attack", false);
+        }
         }
     }
 
