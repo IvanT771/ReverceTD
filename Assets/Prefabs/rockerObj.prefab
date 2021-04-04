@@ -941,11 +941,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTower: 0
-  myHp: 100
+  myHp: 65
   rangeAttack: 27
-  forceDamage: 1
+  forceDamage: 0
   enemyTag: Player
-  price: 100
+  price: 0
   spawnPoint: {fileID: 3724989124590916438}
   stone: {fileID: 8981231452404888416, guid: 5b2f8c825562a6b44b299994b978542e, type: 3}
   animator: {fileID: 4433688176886361552}

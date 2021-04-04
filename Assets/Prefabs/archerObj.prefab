@@ -513,11 +513,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTower: 0
-  myHp: 10
+  myHp: 25
   rangeAttack: 50
-  forceDamage: 1
+  forceDamage: 0
   enemyTag: Enemy
-  price: 150
+  price: 30
   arrow: {fileID: 5550899710773591857, guid: 9c7175e4ccdcb2e4fb381d03464dbbd0, type: 3}
   spawnPoint: {fileID: 4274801760800745583}
   animator: {fileID: 446560135065161849}

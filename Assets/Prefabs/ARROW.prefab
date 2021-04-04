@@ -94,9 +94,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162c91f628e2b3a4bbc9cf12e7d8fbdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTower: 0
   myHp: 1000
   rangeAttack: 2
-  forceDamage: 10
+  forceDamage: 15
   enemyTag: Enemy
   price: 0
   speed: 15

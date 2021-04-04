@@ -478,6 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b97f408d10ec642954b6146516bd0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRocker: 0
 --- !u!1 &4059099765871140418
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,13 +988,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acdf3fc24aec3ba41acd739370934d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHp: 1000
-  rangeAttack: 3
-  forceDamage: 8
+  isTower: 0
+  myHp: 40
+  rangeAttack: 4
+  forceDamage: 25
   enemyTag: Enemy
+  price: 60
   animator: {fileID: 5328248195039225552}
-  speed: 3
-  timeFre: 3
+  speed: 7
 --- !u!1 &7860940520030471632
 GameObject:
   m_ObjectHideFlags: 0
