@@ -97,7 +97,7 @@ MonoBehaviour:
   isTower: 0
   myHp: 1000
   rangeAttack: 2
-  forceDamage: 15
+  forceDamage: 5
   enemyTag: Enemy
   price: 0
   speed: 15
