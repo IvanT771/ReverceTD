@@ -24,7 +24,7 @@ public class Rocker : MobsAI
 
     public void UpStone()
     {
-        if(stoneObj != null) { return;}
+        if(stoneObj != null || !GameMaster.instatiate.isGo) { return;}
 
         stoneObj = Instantiate(stone,spawnPoint.position,spawnPoint.rotation);
         stoneObj.transform.parent = spawnPoint.transform;
@@ -35,11 +35,11 @@ public class Rocker : MobsAI
     }
     private void Update()
     {
-        if(target != null) { 
+        if(target == null || !GameMaster.instatiate.isGo) { animator.SetBool("attack", false); return;}
 
             
 
-        if( Vector3.Distance(transform.position,target.position) <= 10f)
+        if( Vector3.Distance(transform.position,target.position) <= rangeAttack)
         {
             animator.SetBool("attack",true);
         }
@@ -47,7 +47,7 @@ public class Rocker : MobsAI
         {
             animator.SetBool("attack", false);
         }
-        }
+        
     }
 
 }

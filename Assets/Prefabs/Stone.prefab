@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7467885294743130805}
   - component: {fileID: 7556697985069624777}
   - component: {fileID: 5061641770603392186}
+  - component: {fileID: 229398080771943218}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -112,3 +113,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.110240996
   m_Center: {x: 0.0008153729, y: 0.0024139732, z: 0.0015878305}
+--- !u!114 &229398080771943218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8981231452404888416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb13a55b12a4894cb31b3165ba3c4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 10
+  forceDamage: 20

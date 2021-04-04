@@ -45,7 +45,12 @@ public class MobAI : MobsAI
         else
         {
             animator.SetBool("attack",false);
+
+            Vector3 d = transform.position;
+
             transform.Translate(dir.normalized * speed*Time.deltaTime,Space.World);
+            d = new Vector3(transform.position.x,d.y,transform.position.z);
+            transform.position = d;
         }
     }
 

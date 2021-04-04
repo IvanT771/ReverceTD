@@ -30,7 +30,7 @@ public class MobsAI : MonoBehaviour
         return price;
     }
 
-    private void SetTarget()
+    virtual public void SetTarget()
     {
         if (!GameMaster.instatiate.isGo) { return; }
         
@@ -69,14 +69,22 @@ public class MobsAI : MonoBehaviour
     {
         myHp -= forceDamage;
         if (myHp <= 0)
-        {
-            Destroy(gameObject);
+        {      
+            Death();
         }
     }
 
+    virtual public void Death()
+    {
+        Destroy(gameObject);
+    }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, rangeAttack);
 
-    
+    }
 
 
 }

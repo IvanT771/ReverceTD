@@ -8,6 +8,7 @@ TagManager:
   - Tower
   - Enemy
   - Ground
+  - Archer
   layers:
   - Default
   - TransparentFX

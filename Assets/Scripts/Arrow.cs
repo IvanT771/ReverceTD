@@ -20,6 +20,33 @@ public class Arrow : MobsAI
         Destroy(gameObject);
     }
 
+    public override void SetTarget()
+    {
+        var a = GameObject.FindGameObjectsWithTag("Archer");
+
+        if(a != null)
+        {
+            float dist = Mathf.Infinity;
+            foreach (var en in a)
+            {
+                float buf = Vector3.Distance(transform.position, en.transform.position);
+                if (dist > buf)
+                {
+                    if (en != null)
+                    {
+                        dist = buf;
+                        target = en.transform;
+                    }
+                }
+            }
+        }
+        
+
+        if(target == null)
+        base.SetTarget(); 
+
+    }
+
     private void Update()
     {
         if (target == null) { return; }
