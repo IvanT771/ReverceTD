@@ -708,7 +708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTower: 0
-  myHp: 100
+  myHp: 20
   rangeAttack: 3.5
   forceDamage: 5
   enemyTag: Enemy
