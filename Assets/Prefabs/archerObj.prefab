@@ -509,8 +509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599da0e02a7c1f04d84936b9b2cb671b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myHp: 100
-  rangeAttack: 30
+  myHp: 10
+  rangeAttack: 50
   forceDamage: 1
   enemyTag: Enemy
   price: 150

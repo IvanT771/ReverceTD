@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MobsAI : MonoBehaviour
 {
+    public bool isTower = false;
     [SerializeField]protected int myHp = 100;
     [SerializeField]protected float rangeAttack = 3f;
     [SerializeField]protected int forceDamage = 1;
@@ -15,7 +16,7 @@ public class MobsAI : MonoBehaviour
 
     private void Start()
     {
-
+        if (isTower) { return;}
         InvokeRepeating("SetTarget", 0, 0.5f);
     }
     public virtual void Attack()
