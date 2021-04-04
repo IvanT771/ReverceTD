@@ -20,7 +20,7 @@ public class Stone : MonoBehaviour
 
         foreach (var en in enemu)
         {
-
+            if(en != null)
             if (Vector3.Distance(transform.position,en.transform.position) <= range)
             {
                 var buf = en.GetComponent<MobsAI>();

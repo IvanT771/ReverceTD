@@ -2,27 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Archer : MobsAI
+public class Titan : MobsAI
 {
-    [Header("Arrow")]
-    [SerializeField] private GameObject arrow;
-    [SerializeField] private Transform spawnPoint;
-
-    [Space(3)]
-    [Header("Animation and speed")]
+    [Header("Контроль анимацией")]
     [SerializeField] private Animator animator;
     [SerializeField] private float speed = 3f;
 
 
+
+
+
     public override void Attack()
     {
-       Instantiate(arrow.gameObject,spawnPoint.position,Quaternion.identity);
+
+        if (target == null) { return; }
+
+        var buf = target.GetComponent<MobsAI>();
+        if (buf == null) { return; }
+
+
+
+        buf.Damage(forceDamage);
+
     }
 
     private void Update()
     {
         if (target == null || !GameMaster.instatiate.isGo) { if (!GameMaster.instatiate.isGo) { animator.enabled = false; } return; }
         animator.enabled = true;
+
         Vector3 dir = target.position - transform.position;
 
         //look 
@@ -32,13 +40,17 @@ public class Archer : MobsAI
 
         if (Vector3.Distance(transform.position, target.position) <= rangeAttack)
         {
-            animator.SetBool("attack", true);
+            animator.SetBool("troop", true);
         }
         else
         {
-            animator.SetBool("attack", false);
+            animator.SetBool("troop", false);
+
+            Vector3 d = transform.position;
+
             transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+            d = new Vector3(transform.position.x, d.y, transform.position.z);
+            transform.position = d;
         }
     }
-
 }

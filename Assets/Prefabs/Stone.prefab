@@ -125,5 +125,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb13a55b12a4894cb31b3165ba3c4b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 7
+  range: 6
   forceDamage: 25

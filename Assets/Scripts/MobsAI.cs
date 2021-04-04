@@ -41,10 +41,12 @@ public class MobsAI : MonoBehaviour
             if(enemyTag == "Enemy")
             {
             Debug.Log("---GAME WIN---");
+            GameMaster.instatiate.GameWin();
             }
             else
             {
-            Debug.Log("---GAME OWER---");
+            Debug.Log("---GAME OVER---");
+                GameMaster.instatiate.GameOver();
             }
             GameMaster.instatiate.isGo = false;
             return;

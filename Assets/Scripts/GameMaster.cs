@@ -10,6 +10,11 @@ public class GameMaster : MonoBehaviour
     [Header("Связующие объекты")]
     [SerializeField] private GameObject panelPause = null;
     [SerializeField] private PanelTools panelTools = null;
+    [Space(3)]
+    [SerializeField] private GameObject panelWin = null;
+    [SerializeField] private GameObject panelOver = null;
+    [Space(3)]
+    [SerializeField] private GameObject[] nods = null;
 
     private void Awake()
     {
@@ -47,5 +52,21 @@ public class GameMaster : MonoBehaviour
         {
             panelTools.ShowHidePanel();
         }
+
+        foreach (var nod in nods)
+        {
+            nod.SetActive(false);
+        }
+    }
+
+    public void GameOver()
+    {
+        panelOver.SetActive(true);
+
+    }
+
+    public void GameWin()
+    {
+        panelWin.SetActive(true);
     }
 }
