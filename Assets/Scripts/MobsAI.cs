@@ -13,6 +13,11 @@ public class MobsAI : MonoBehaviour
 
     protected Transform target = null;
 
+    private void Start()
+    {
+
+        InvokeRepeating("SetTarget", 0, 0.5f);
+    }
     public virtual void Attack()
     {
         //Base
@@ -23,7 +28,7 @@ public class MobsAI : MonoBehaviour
         return price;
     }
 
-    protected void SetTarget()
+    private void SetTarget()
     {
         if (!GameMaster.instatiate.isGo) { return; }
         

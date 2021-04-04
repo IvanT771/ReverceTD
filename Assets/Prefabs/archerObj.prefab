@@ -474,6 +474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6328813926367729929}
+  - component: {fileID: 8114608997503235571}
   m_Layer: 0
   m_Name: archerObj
   m_TagString: Player
@@ -496,6 +497,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8114608997503235571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403949236629579714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599da0e02a7c1f04d84936b9b2cb671b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myHp: 100
+  rangeAttack: 30
+  forceDamage: 1
+  enemyTag: Enemy
+  price: 150
+  arrow: {fileID: 5550899710773591857, guid: 9c7175e4ccdcb2e4fb381d03464dbbd0, type: 3}
+  spawnPoint: {fileID: 4274801760800745583}
+  animator: {fileID: 446560135065161849}
+  speed: 3
 --- !u!1 &4476706916450080878
 GameObject:
   m_ObjectHideFlags: 0
