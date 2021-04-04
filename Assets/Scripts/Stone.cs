@@ -21,6 +21,7 @@ public class Stone : MonoBehaviour
         foreach (var en in enemu)
         {
             if(en != null)
+                Debug.Log(Vector3.Distance(transform.position, en.transform.position));
             if (Vector3.Distance(transform.position,en.transform.position) <= range)
             {
                 var buf = en.GetComponent<MobsAI>();
@@ -36,6 +37,7 @@ public class Stone : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (isContact) { return;}
+
         if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player")) {
             
             isContact = true;
